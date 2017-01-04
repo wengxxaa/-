@@ -35,7 +35,7 @@ static const int PAY_2_DIAMOND = 10;	//
 static const int PAY_DIAMOND[9]={20,400,55,120,220,400,400,10,400};
 #else
 static const int PAY_2_DIAMOND = 5;	//
-static const int PAY_DIAMOND[10]={20,60,120,220,400,400,10,400,15,400};
+static const int PAY_DIAMOND[10]={20,60,120,220,400,400,400,10,400,400};
 #endif
 //
 

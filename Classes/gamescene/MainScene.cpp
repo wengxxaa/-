@@ -232,11 +232,11 @@ bool MainScene::init()
 			PayScene::getInstance()->payPage3();
 		}
 	});
-	xslb->setVisible(false);
-	//if(GameDataInstance()->d_PayType&&vigame::pay::PayManager::getDefaultFeeInfo()&& vigame::pay::PayManager::getDefaultFeeInfo()->getFeePriceByID(4))
-	//	xslb->setVisible(true);
-	//else
-	//	xslb->setVisible(false);
+	//xslb->setVisible(false);
+	if(GameDataInstance()->d_PayType&&vigame::pay::PayManager::getDefaultFeeInfo()&& vigame::pay::PayManager::getDefaultFeeInfo()->getFeePriceByID(4))
+		xslb->setVisible(true);
+	else
+		xslb->setVisible(false);
 
 	auto lb=dynamic_cast<ui::Button*>(backcsb->getChildByName("Button_lb"));
 	lb->addTouchEventListener([=](Ref *,ui::Widget::TouchEventType type){

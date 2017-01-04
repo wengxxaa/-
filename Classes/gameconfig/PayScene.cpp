@@ -214,7 +214,6 @@ void PayScene::payPage2()
 //xianshi
 void PayScene::payPage3()
 {
-	return;
 	auto colorlay=LayerColor::create(Color4B(0,0,0,255*OPA_BEIJING),WINSIZE.width,WINSIZE.height);
 	Director::getInstance()->getRunningScene()->addChild(colorlay,100,100);
 	colorlay->setPosition(WINORIGIN);
@@ -773,8 +772,7 @@ void PayScene::addDiamondPlist(Layer *lay,int level)
 //
 void PayScene::levelReward()
 {
-	return;
-	
+
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS|| IOSMODE)
 	auto pADItem = vigame::ad::ADManager::isAdReady("home_mfzs", "video");
 	if (pADItem&&GameData::getSaveData()->_freeroundnum < 20) {
@@ -1636,12 +1634,12 @@ void PayScene::turnTip()
 //
 void PayScene::paysuccess(int key)
 {
-	int id = 0;
+	int id = key;
 	if (key == 0 || key == 7)
 		id = 0;
 	else if (key >= 2 && key <= 5)
 		id = key - 1;
-	else
+	else if(key==1)
 		id = 4;
 
 	GameDataInstance()->d_xianshidalibao = false;
