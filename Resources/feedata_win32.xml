@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <imsi>1</imsi>
+    <imei>2</imei>
+    <lsn>124425558</lsn>
+    <macaddress>4</macaddress>
+    <mobile>5</mobile>
+
+    <appid>15665</appid>
+    <prjid>17100</prjid>
+    <mmid>000000000000</mmid>
+
+    <package>com.wb.hw.ttxfk</package>
+    <appname>天天消方块</appname>
+    <version>3.0.9</version>
+
+    <!--运营商：移动1，联通2，电信3-->
+    <PayOperator>1</PayOperator>
+
+    <!--支付类型：MM2，基地3，沃商店4，天翼空间6，爱游戏7，其它参考PayType枚举类-->
+    <PayType>2</PayType>
+
+    <Market>7</Market>
+
+    <feeinfo>
+    <ID>0</ID>
+    <price>1</price>
+    <code>30000892469901</code>
+	</feeinfo>
+
+	<feeinfo>
+    <ID>1</ID>
+    <price>600</price>
+    <code>30000892469903</code>
+	</feeinfo>
+	
+	<feeinfo>
+    <ID>2</ID>
+    <price>1200</price>
+    <code>30000892469906</code>
+	</feeinfo>
+	
+	<feeinfo>
+    <ID>3</ID>
+    <price>1800</price>
+    <code>30000892469907</code>
+	</feeinfo>
+	
+	<feeinfo>
+    <ID>4</ID>
+    <price>2900</price>
+    <code>30000892469907</code>
+	</feeinfo>	
+
+</data>

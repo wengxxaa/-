@@ -1,0 +1,3 @@
+棋盘宽度,棋盘高度,游戏时间,元素填充速度,基础积分,元素类型个数,变色消除个数
+width,height,time,drop time,base score,num,num
+7,8,60,0.2,100,5,3

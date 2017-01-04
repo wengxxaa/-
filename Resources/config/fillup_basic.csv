@@ -1,0 +1,9 @@
+类型,满值积分,积分倍数,消除间隔时间,效果持续时间,触发道具,触发道具次数,道具消除积分获取百分比,是否可打断,打断减少当前能力百分比
+type,score,multiple,eliminate time,multiple time,prop,prop number,eliminate score,interrupt,score reduce
+1,12,2,5,8,3,,0.2,1,0
+2,27,3,5,9,5,,0.2,1,0
+3,45,4,5,10,6,,0.2,1,0
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,, ,,,,,,

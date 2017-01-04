@@ -1,0 +1,39 @@
+  <?xml version="1.0" encoding="UTF-8" ?> 
+- <root>
+  <VideoLimitNum>-1</VideoLimitNum> 
+- <adsources>
+- <adsource agent="Admob" appid="ca-app-pub-7851203648968517/2915365984">
+  <placement type="plaque" code="ca-app-pub-7851203648968517/2915365984" limitname="pause" /> 
+  </adsource>
+- <adsource agent="Admob" appid="ca-app-pub-7851203648968517/7485166380">
+  <placement type="plaque" code="ca-app-pub-7851203648968517/7485166380" limitname="home" /> 
+  </adsource>
+- <adsource agent="Vungle" appid="5811ad882d894fef2c0000bb">
+  <placement type="video" code="5811ad882d894fef2c0000bb" /> 
+  </adsource>
+- <adsource agent="Admob" appid="ca-app-pub-7851203648968517/4392099187">
+  <placement type="plaque" code="ca-app-pub-7851203648968517/4392099187" limitname="rotary" /> 
+  </adsource>
+- <adsource agent="Admob" appid="ca-app-pub-7851203648968517/6517000383">
+  <placement type="plaque" code="ca-app-pub-7851203648968517/6517000383" limitname="level_fail" /> 
+  </adsource>
+- <adsource agent="Unity" appid="1180931">
+  <placement type="video" code="level_fail_mfzs" limitname="level_fail_mfzs" /> 
+  <placement type="video" code="home_mfzs" limitname="home_mfzs" /> 
+  <placement type="video" code="rotary_mfzs" limitname="rotary_mfzs" /> 
+  </adsource>
+- <adsource agent="Admob" appid="ca-app-pub-7851203648968517/1438632784">
+  <placement type="plaque" code="ca-app-pub-7851203648968517/1438632784" limitname="level_win" /> 
+  </adsource>
+  </adsources>
+- <adpositions>
+  <adposition name="home_mfzs" type="video" agent="Unity,Vungle" agentpecent="30,70" rate="100" /> 
+  <adposition name="home" type="plaque" agent="Admob" agentpecent="100" rate="100" /> 
+  <adposition name="pause" type="plaque" agent="Admob" agentpecent="100" rate="100" /> 
+  <adposition name="rotary" type="plaque" agent="Admob" agentpecent="100" rate="100" /> 
+  <adposition name="level_win" type="plaque" agent="Admob" agentpecent="100" rate="100" /> 
+  <adposition name="level_fail_mfzs" type="video" agent="Vungle,Unity" agentpecent="70,30" rate="100" /> 
+  <adposition name="level_fail" type="plaque" agent="Admob,Admob" agentpecent="50,50" rate="100" /> 
+  <adposition name="rotary_mfzs" type="video" agent="Unity,Vungle" agentpecent="30,70" rate="100" /> 
+  </adpositions>
+  </root>
