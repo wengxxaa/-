@@ -81,7 +81,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 #else
 	GameDataInstance()->BANER_HEIGHT=(Director::getInstance()->getWinSize().width/320.0f)*50*(800.0f/Director::getInstance()->getWinSize().height);	//baner的高�?
 #endif
-	GameDataInstance()->BANER_HEIGHT -= 6;
+	//GameDataInstance()->BANER_HEIGHT -= 6;
 
     // turn on display FPS
     director->setDisplayStats(false);

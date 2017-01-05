@@ -233,7 +233,7 @@ bool MainScene::init()
 		}
 	});
 	//xslb->setVisible(false);
-	if(GameDataInstance()->d_PayType&&vigame::pay::PayManager::getDefaultFeeInfo()&& vigame::pay::PayManager::getDefaultFeeInfo()->getFeePriceByID(4))
+	if(GameDataInstance()->d_PayType&&vigame::pay::PayManager::getDefaultFeeInfo()&& vigame::pay::PayManager::getDefaultFeeInfo()->getFeePriceByID(6))
 		xslb->setVisible(true);
 	else
 		xslb->setVisible(false);
@@ -335,7 +335,7 @@ bool MainScene::init()
 		//
 #endif
 	}
-		
+
 	//签到
 	auto qd = dynamic_cast<ui::Button*>(backcsb->getChildByName("Button_qd"));
 	if (qd)
@@ -769,12 +769,12 @@ void MainScene::xinshouUpdate(float ft)
 	//
 	auto csb=getChildByName("csb");
 
-	//auto xslb = dynamic_cast<ui::Button*>(csb->getChildByName("Button_xslb"));
-	//if (!xslb->isVisible())
-	//{
-	//	if (GameDataInstance()->d_PayType&&vigame::pay::PayManager::getDefaultFeeInfo() && vigame::pay::PayManager::getDefaultFeeInfo()->getFeePriceByID(4))
-	//		xslb->setVisible(true);
-	//}
+	auto xslb = dynamic_cast<ui::Button*>(csb->getChildByName("Button_xslb"));
+	if (!xslb->isVisible())
+	{
+		if (GameDataInstance()->d_PayType&&vigame::pay::PayManager::getDefaultFeeInfo() && vigame::pay::PayManager::getDefaultFeeInfo()->getFeePriceByID(6))
+			xslb->setVisible(true);
+	}
 
 	auto lb = dynamic_cast<ui::Button*>(csb->getChildByName("Button_lb"));
 	if (!lb->isVisible()&&GameData::getSaveData()->_xinshou&&GameDataInstance()->d_PayType&&vigame::pay::PayManager::getDefaultFeeInfo() && (vigame::pay::PayManager::getDefaultFeeInfo()->getFeePriceByID(0) || vigame::pay::PayManager::getDefaultFeeInfo()->getFeePriceByID(7)))
